@@ -7,4 +7,8 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD ["python", "main.py"]
+RUN apt update && apt -y upgrade
+#RUN apt update && apt -y upgrade \
+#    && curl -sSL https://install.python-poetry.org | python3 - \
+#    && poetry config virtualenvs.create false \
+#    && poetry install \

@@ -1,6 +1,13 @@
 def max_[T](a: T, b: T) -> T:
     return a if a > b else b
 
+# from typing import TypeVar
+#
+# T = TypeVar('T')
+#
+# def max(a: T, b: T) -> T:
+#     return a if a > b else b
+
 
 max1 = max_(1, 2)
 print(max1)
